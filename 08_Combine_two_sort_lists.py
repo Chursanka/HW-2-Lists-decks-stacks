@@ -1,6 +1,10 @@
-*class*
+class ListNode:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+        
 def combine_two_lists(head1, head2):
-    node = 
+    node = ListNode()
     node.next = head1
     prev = node
     p1 = head1

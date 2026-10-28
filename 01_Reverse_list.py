@@ -1,7 +1,7 @@
 def reverse_list(head):
-    pred = null
+    pred = None
     cur = head
-    while (cur != nul):
+    while (cur != None):
         next = cur.next
         cur.next = prev
         prev = cur

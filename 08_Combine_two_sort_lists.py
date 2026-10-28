@@ -5,7 +5,6 @@ class ListNode:
         
 def combine_two_lists(head1, head2):
     node = ListNode(0)
-    node.next = head1
     prev = node
     p1 = head1
     p2 = head2
@@ -16,6 +15,7 @@ def combine_two_lists(head1, head2):
         else:
             prev.next = p1
             p1 = p1.next
+        prev = prev.next
     if p1 == None:
         prev.next = p1
     else:

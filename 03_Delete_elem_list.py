@@ -4,7 +4,7 @@ class ListNode:
         self.next = None
   
 def del_node(head, val):
-    node = ListNode()
+    node = ListNode(0)
     node.next = head
     prev = node
     cur = head

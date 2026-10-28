@@ -1,7 +1,7 @@
 def find_middle(head):
     left = head
     right = head
-    while (right != null) and (right.next != null):
+    while (right != None) and (right.next != None):
         right = right.next.next
         left = left.next
     return left

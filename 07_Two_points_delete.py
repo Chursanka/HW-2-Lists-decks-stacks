@@ -1,6 +1,6 @@
 def del_dup(arr):
     le = 0
-    for ri in range(le+1, len(n) - 1):
+    for ri in range(le+1, len(arr)):
         if arr[le] != arr[ri]:
             le += 1
             arr[le] = arr[ri]

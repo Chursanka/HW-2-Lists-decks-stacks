@@ -8,7 +8,7 @@ def del_node(head, val):
     node.next = head
     prev = node
     cur = head
-    while (cur != null):
+    while (cur != None):
         if cur.val == val:
             prev.next = cur.next
         else:

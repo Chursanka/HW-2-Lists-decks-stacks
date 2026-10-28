@@ -1,9 +1,9 @@
 def del_dup(arr):
     le = 0
-    if (len(arr) > 1):
-        while (le != len(arr) - 2):
-            if arr[le + 1] == arr[le]:
-                arr.pop(le + 1)
-            else:
-                le += 1
+    for ri in range(le+1, len(n) - 1):
+        if arr[le] != arr[ri]:
+            le += 1
+            arr[le] = arr[ri]
+    del arr[le + 1:]
     return arr
+# le - правая граница уникальных символов, всё, что левее le - наш ответ. ri - необработанные элементы 

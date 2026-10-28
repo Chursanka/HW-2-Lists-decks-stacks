@@ -17,9 +17,9 @@ def combine_two_lists(head1, head2):
             p1 = p1.next
         prev = prev.next
     if p1 == None:
-        prev.next = p1
-    else:
         prev.next = p2
+    else:
+        prev.next = p1
     return node.next
 # Программа проходится по всем узлам двух списков один раз => Сложность O(n + m)
 # Программа требует только один нулевой узел-заглушку на случай, если нужно будет вставить узел перед первым => O(1) по памяти
